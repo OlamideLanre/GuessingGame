@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess The Number</title>
-   
-    <link rel="stylesheet" href="StyleSheet.css">
-</head>
-<body>
+
+    <link rel="stylesheet" href="StyleSheet.css" />
+  </head>
+  <body>
     <div class="mainDiv">
-        <div class="CorrectNumDisplay js-DisplayDiv">
-            <p class="TextDisplay"></p>
-        </div>
-        <p class="warningMessage" 
-        style="text-align: center; letter-spacing: 2px; color: red; margin-bottom: 0%; margin-top: 0%;"></p>
+      <div class="CorrectNumDisplay js-DisplayDiv">
+        <p class="TextDisplay" style="color: white"></p>
+      </div>
+      <p
+        class="warningMessage"
+        style="
+          text-align: center;
+          letter-spacing: 2px;
+          color: red;
+          margin-bottom: 0%;
+          margin-top: 0%;
+        "
+      ></p>
 
-        <input type="text" class="InputField" placeholder="Enter a value..">
-        <p style="margin-left: 237px; margin-top: 40px;">
-            <button class="submitBtn">Guess</button> 
+      <div class="content2 row">
+        <input type="text" class="InputField" placeholder="Enter a value.." />
+        <button class="submitBtn">Guess</button>
 
-            <button class="restartBtn" onclick="location.reload()"
-                style=" margin-top: 4px; float: right; border-radius: 3px; border: none; margin-right: 196px;" title="Restart Game">
-                <img style="height: 24px; width: 24px;" src="image(s)/restart-icons-.png"
-                    alt="Restart button">
-            </button>
-        </p>
-      
-        
+        <button
+          class="restartBtn submitBtn"
+          onclick="location.reload()"
+          title="Restart Game"
+        >
+          restart
+        </button>
+      </div>
     </div>
     <script src="GuessingGame.js"></script>
-</body>
+  </body>
 </html>

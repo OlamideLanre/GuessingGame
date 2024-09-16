@@ -1,52 +1,60 @@
         .mainDiv {
-            width: 600px;
-            height: 600px;
-            margin-left: auto;
-            margin-right: auto;
-
+            margin: 0% auto;
+            padding: .8em;
         }
 
         .CorrectNumDisplay {
-            width: 300px;
+            width: 60%;
             height: 120px;
             border-radius: 5px;
-            margin-left: 150px;
-            position: absolute;
-            margin-top: 30px;
-            background-color: rgb(245, 185, 205);
+            margin: 0% auto;
+            /* background-color: rgb(245, 185, 205); */
+            background-color: black;
         }
 
+        .content2{
+            width: 50%;
+            margin: 5% auto;
+            padding: 1em;
+        }
+        .row{
+            display: flex;
+            gap: .7em;
+            justify-content: center;
+        }
         .InputField {
-            /* background-color: rgb(245, 245, 134); */
-            margin-top: 210px;
-            margin-left: 182px;
             outline: none;
             border: none;
             border-bottom: 1px solid black;
-            padding: 15px 30px 15px 30px;
-
+            padding: 15px 3em;
+            border-radius: 1em;
+            background-color: rgb(237, 234, 234);
         }
 
         .submitBtn {
             background-color: rgb(110, 243, 110);
             border: none;
-            padding: 10px 40px 10px 40px;
+            padding: 10px 40px;
             border-radius: 6px;
             color: white;
             letter-spacing: 1px;
         }
 
-        .submitBtn:hover {
-            cursor: pointer;
-        }
-
-        .restartBtn:hover {
-            cursor: pointer;
-        }
+     button{
+        cursor: pointer;
+     }
 
         .TextDisplay {
-            margin-top: 40px;
+            /* margin-top: 40px; */
+            padding: .6em 0;
             text-align: center;
-            font-size: 35px;
+            font-size: 3rem;
             font-style: italic;
+            align-items: center;
+        }
+
+        @media (min-width: 340px) and (max-width:540px) {
+            .row{
+                flex-direction: column;
+            }
         }
