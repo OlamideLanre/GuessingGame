@@ -10,10 +10,10 @@ gameButton.addEventListener("click", GuessTheNumber);
 function GuessTheNumber() {
   let inputValue = Inputfield.value;
   if (inputValue === "") {
-    Message.innerHTML = "input field cannot be blank";
+    Message.innerHTML = "kindly enter a value";
     setTimeout(() => {
       Message.innerHTML = "";
-    }, 2000);
+    }, 3000);
     console.log("working");
   } else if (inputValue != "") {
     while (guess_count > 0) {
@@ -24,9 +24,11 @@ function GuessTheNumber() {
         Message.innerHTML = "YOU WIN! YAY!";
         Message.style.color = "rgb(110, 243, 110)";
         Message.style.fontweight = "bold";
-        setTimeout(() => {
-          location.reload();
-        }, 5000);
+        console.log(correct_Num);
+
+        // setTimeout(() => {
+        //   location.reload();
+        // }, 5000);
         break;
       } else if (guess_count > 0) {
         Message.innerHTML = "Oops! try again";
@@ -38,9 +40,9 @@ function GuessTheNumber() {
       } else {
         Message.innerHTML = "GAME OVER";
         setTimeout(() => {
-          Message.innerHTML = "heres the correct number :)";
+          Message.innerHTML = "better luck next time, heres the correct number";
           TextDisplayDiv.innerHTML = correct_Num;
-        }, 2000);
+        }, 1000);
 
         setTimeout(() => {
           location.reload();
